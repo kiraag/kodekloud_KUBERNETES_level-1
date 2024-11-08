@@ -1,5 +1,8 @@
-## The Nautilus DevOps team has noticed performance issues in some Kubernetes-hosted applications due to resource constraints. To address this, they plan to set limits on resource utilization. Here are the details:
-## Create a pod named `httpd-pod` with a container named `httpd-container`. Use the `httpd` image with the `latest` tag (specify as `httpd:latest`). Set the following `resource limits`:                                                                                                                           `Requests: Memory: 15Mi, CPU: 100m                                                                                                                         Limits: Memory: 20Mi, CPU: 100m`
+### The Nautilus DevOps team has noticed performance issues in some Kubernetes-hosted applications due to resource constraints. To address this, they plan to set limits on resource utilization. Here are the details:
+### Create a pod named `httpd-pod` with a container named `httpd-container`. Use the `httpd` image with the `latest` tag (specify as `httpd:latest`). Set the following `resource limits`: 
+`Requests: Memory: 15Mi, CPU: 100m                                                                                                                         Limits: Memory: 20Mi, CPU: 100m`
+
+---
 
 ### To create a pod with specific resource requests and limits, you can use a YAML configuration file. Here’s how to configure httpd-pod with the specified resource constraints.
 
